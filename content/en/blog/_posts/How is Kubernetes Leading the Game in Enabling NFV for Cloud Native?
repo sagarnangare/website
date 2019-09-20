@@ -1,0 +1,33 @@
+Impact of cloud-native readiness on applications, which are mostly orchestrated using Kubernetes, can be seen on VMware’s announcements in recent VMworld 2019. This made it clear to the IT world that focus of IT infrastructure has shifted to containerization from virtualization. Going cloud-native and shifting workloads on top of Kubernetes clusters is a key trend being followed by the industry.
+
+CNCF has shown the aggression to push their projects to enterprise IT infrastructure and telecom service providers to build the core of data center using new containerized and microservices method.
+
+NFV and telecom use cases also started shifting to cloud native landscape in the last 2 years. NFV technique has help CXO’s move to the software-defined and centric data center with Virtual Network Functions (VNFs) as core elements, being orchestrated using VNF Managers (VNFM). The VNFs orchestration can be done using commercial VNFM platforms offered by Nokia, Cisco, Ericsson, Huawei, and NEC; and an open-source platform like OpenStack Tacker. Now with cloud native movement in IT domain, VNFs are becoming Cloud Native Network Functions (CNFs).
+
+Cloud-native development of network functions:
+
+makes applications or code portable & reusable i.e. can be repetitively used independent of the underlying infrastructure
+allows the application to scale up and down where there is demand
+can be deployed with microservices way but not mandatorily
+suitable for elastic and distributed computing environment
+Also, cloud-native development enable NFV to embrace DevOps, agile techniques, and more importantly allowing container orchestration engines like Kubernetes to handle workloads. Which also means that more dynamism comes into the picture at the core stack of NFV.
+
+Earlier, CNFs were in evaluation phase to check for readiness by several vendors and service providers to be used in NFV use cases. In 2018, I wrote about the benefits of deploying network functions in containers and being architected using microservices. Also, I wrote on why cloud-native VNFs are important in NFV success.
+
+The below image shows how VNFs were managed in past, how currently it is managed along with CNFs and future shows how Kubernetes can be a de-facto framework to handle network functions and applications pushed into CNFs and VNFs.
+
+Kubernetes in picture
+
+Now, we can see how Kubernetes has evolved so much in the data center of every size for handling every workload types. Also, Kubernetes is becoming a choice to orchestrate workloads at edges as well. We have seen several collaborations for new solutions for 5G that specifically focused on handling containers using Kubernetes and legacy virtual machines using OpenStack.
+
+There are several ways Kubernetes can be useful for NFV use cases for handling network functions and applications. Kubernetes can be useful in hosting all cloud-native software stack into the clusters.
+
+If you are a software or solution provider, Kubernetes can help you orchestrate all workload types like VNFs, CNFs, VMs, Containers, and functions. With Kubernetes, it has become possible for all workloads to co-exist in one architecture. ONAP is leading service orchestrator and NFV MANO platform to handle services deployed in NFV. A Kubernetes plugin specifically developed for ONAP makes it possible to orchestrate different services and workloads cater through multiple sites.
+
+ONAP has challenges in terms of installation and maintenance. Also, concerns have been noted related to heavy consumption of resources like storage and memory. To work along with Kubernetes, ONAP release a lightweight version, which will fit with many NFV architectures. It is called ONAP4K8S. Requirements and package contents are published on its profile page.
+
+There can be cases where it is not possible to completely get away from virtual machines. Some of the existing functions need to reside with virtual machines and cannot be containerized. For such cases, Kubernetes community is KubeVirt and Mirantis’s Virlet frameworks can be integrated to dynamically manage virtual machines along with containers. Kubernetes also becomes a choice for enabling orchestration at the edge of the network. Kubernetes based control plane uses less number of resources that makes it suitable for edge nodes even with one server.
+
+Cloud-native NFV Stack
+
+Akraino edge stack is hosting a blueprint called at Integrated Cloud Native (ICN) NFV Stack under which all developments of making NFV core cloud-native are in progress. The current progress of integrating open-source cloud-native projects for NFV stack is shown in below picture
